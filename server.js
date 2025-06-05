@@ -24,7 +24,7 @@ app.post('/api/lead', (req, res) => {
   console.log("E-mail:", email);
   console.log("Celular:", celular);
   console.log("Mensagem:", mensagem);
-  res.json({ mensagem: "Lead recebido com sucesso!" });
+  res.json({ mensagem: "Enviado com sucesso!" });
 });
 
 const PORT = process.env.PORT || 3003;

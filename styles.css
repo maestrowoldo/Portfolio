@@ -313,14 +313,11 @@ button {
   border-radius: 5px;
 }
 
-.confirmacao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #fff;
-  gap: 20px;
-  margin-top: 40px;
+.Confirmacao {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px
 }
   
 /* Estilo geral do footer */
