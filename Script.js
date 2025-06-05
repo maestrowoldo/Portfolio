@@ -15,3 +15,22 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+document.getElementById('leadForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('email').value;
+  const celular = document.getElementById('celular').value;
+  const mensagem = document.getElementById('mensagem').value;
+
+  const res = await fetch('/api/lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ nome, email, celular, mensagem })
+  });
+
+  const data = await res.json();
+  document.getElementById('Confirmacao').textContent = data.mensagem;
+  this.reset();
+});
+

@@ -47,7 +47,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo">
-                        <h1>TRANSFORMANDO IDEIAS EM REAILIDADE DIGITAL<span>.</span></h1>
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
                         <p>Como um buscador de  oportunidades, estou sempre atento a novas maneiras de fazer
                            as coisas e estou pronto para mergulhar em projetos desafiadores e inovadores. 
                            Estou ansioso para contribuir com minha paixão pela inovação e minha vontade de aprender.
@@ -126,7 +126,7 @@
                         </P>
                         <div class="btn_redes">
                             <a href="https://www.instagram.com/maestro_woldo/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://x.com/maestro_woldo"  target="_blank"><button><i class="bi bi-twitter-x"></i></button></i></a>
+                            <a href="https://x.com/maestro_woldo"  target="_blank"><button><i class="bi bi-github"></i></button></i></a>
                             <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/"  target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
                         </div>
                     </div><!--txt-sobre-->
@@ -162,16 +162,18 @@
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
           
-            <form action="">
-                <input type="text" id="" name="" placeholder="Seu nome completo:" required>
-                <input type="text" id="" name="" placeholder="Seu e-mail:" required>
-                <input type="text" id="" name="" placeholder="Seu celular:" >
-                <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            <form id="leadForm">
+                <input type="text" id="nome"  placeholder="Seu nome completo:" required>
+                <input type="text" id="email"  placeholder="Seu e-mail:" required>
+                <input type="text" id="celular"  placeholder="Seu celular:" >
+                <textarea name="" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button class="btn-enviar" type="submit"> Enviar</button>
             </form>
+			<p class="Confirmacao" id="Confirmacao"></p>
             </div>
             
         </section><!--Fim formulario-->
+        
         
         <script src="Script.js"></script>
           
@@ -182,26 +184,28 @@
 
     <footer>
         <div class="interface">
-            
             <div class="line-footer">
                 <div class="logo-footer">
                     <img src="images/logo best.png" alt="Logotipo Woldo Design +">
-                </div><!--logo-footer-->
+                </div>
+
+                <p class="copyright">&copy; 2024 Woldo Pro. All rights reserved.</p>
+
                 <div class="btn_redes">
-                    <a href="https://www.instagram.com/maestro_woldo/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                    <a href="https://x.com/maestro_woldo"  target="_blank"><button><i class="bi bi-twitter-x"></i></button></i></a>
-                    <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/"  target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                </div><!--btn social-->
-            </div><!--line-footer-->
-            <div class="line-footer">
-                
-                
-            </div><!--line-footer-->
-        </div>
-        <div class="container">
-            <p>&copy; 2024 Wolkendo Copyright</p>
+                    <a href="https://www.instagram.com/maestro_woldo/" target="_blank">
+                    <button><i class="bi bi-instagram"></i></button>
+                    </a>
+                    <a href="https://github.com/maestrowoldo" target="_blank">
+                    <button><i class="bi bi-github"></i></button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/" target="_blank">
+                    <button><i class="bi bi-linkedin"></i></button>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
+
     
 </body>
 </html>
