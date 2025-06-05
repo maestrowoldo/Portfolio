@@ -1,0 +1,405 @@
+/*Estilo geral*/
+body {
+    background-color: #000;
+    height: 100vh;
+}
+.logoo{
+    margin: 0;
+    height: 80px;
+    border-radius: 20px;   
+    cursor: pointer;
+    transition: 0.2s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.interface {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+h2.titulo{
+    color: #ffffff;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color:#00ff08
+}
+button:hover,   form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+/*Estilo do cabeçalho*/
+header {
+    padding: 0 4%;
+    
+}
+header.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Ajuste conforme necessário */
+    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros conteúdos */
+    transition: background-color 0.10s ease; /* Opcional: adiciona sombra para destaque */
+}
+
+header.fixed-header.scrolled {
+    background-color: #ffffff; /* Altere para a cor que desejar */
+}
+
+body {
+    padding-top: 120px; /* Ajuste conforme a altura do seu cabeçalho */
+}
+
+.portfolio .interface {
+    padding-top: 20px; /* Ajuste conforme necessário para dar espaço ao cabeçalho */
+}
+
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5a5a5a;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #000000;
+    transform: scale(1.05);
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+
+
+/*Estilo do topo do site*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo h1{
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo h1 span{
+    color: #00ff08;
+    font-size: 8px;
+}
+
+.topo-do-site .txt-topo p{
+    color: #ffffff;
+    margin: 40px 0;
+
+}
+
+.topo-do-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*Estilo de especialidade*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .special-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+.especialidades .special-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+}
+
+.especialidades .special-box i{ 
+    font-size: 70px;
+    color: #00ff08;
+}
+
+.especialidades .special-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .special-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+    color: #aea9a9; /* Darker gray for headings */
+  }
+
+/*Estilo do sobre*/
+section.sobre{
+    padding: 80px 4%;
+}
+.sobre .txt-sobre{
+    color: #ffffff;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+}
+
+.sobre .txt-sobre .btn_redes button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00ff08;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+ /*Estilo do portfolio*/
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #0f0f0f;
+}
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 330px;
+    height: 430px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 400% 1000%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600px;
+    color: #ffffff;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+/*estilo contato*/
+ .section.formulario{
+    padding: 80px 4%;
+  }
+  
+  form {
+    max-width: 500px; /* Largura do formulário */
+    margin: 0 auto; /* Centralizar o formulário */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    /* Arredondar cantos */
+  }
+
+  form input, form textarea{
+    width: 100%;
+    background-color: #2a2a2a;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  form input::placeholder{
+    color: #aaabaa;
+  }
+
+  form textarea{
+    resize: none;
+    max-height: 150px;
+  }
+
+  form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  form .btn-enviar input{
+    width: 120px;
+    background-color: #00ff08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+
+  }
+  
+/* Estilo geral do footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2px;
+}
+
+.line-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.logo-footer img {
+    max-width: 150px;
+    margin: 0;
+}
+
+.btn_redes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn_redes a button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn_redes a button:hover {
+    background-color: #666;
+}
+
+.btn_redes a i {
+    font-size: 20px;
+}
+
+.container{
+    margin: 0%;
+    align-items: center;
+}
+
+
+/*
+.section {
+    padding: 40px 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
