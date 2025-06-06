@@ -18,8 +18,8 @@ Sou Wolkendo Arias, apaixonado por tecnologia e criatividade. Atuo como desenvol
 ## ✨ Funcionalidades
 
 - Apresentação pessoal com imagem e descrição
-- Seção de projetos (Power BI, Bizagi, Web, Adobe)
-- Contato via formulário (com integração ao EmailJS)
+- Seção de projetos (Power BI, Web, Adobe)
+- Contato via formulário 
 - Layout responsivo 
 - Interface moderna e animada
 
