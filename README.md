@@ -13,7 +13,7 @@ Sou Wolkendo Arias, apaixonado por tecnologia e criatividade. Atuo como desenvol
 
 ## 🖥️ Acesse o Portfólio Online
 
-👉 [Clique aqui para visitar meu site](https://maestrowoldo.github.io/portfolio/)
+👉 [Clique aqui para visitar meu site](https://maestrowoldo.github.io/Portfolio/)
 
 ## ✨ Funcionalidades
 
