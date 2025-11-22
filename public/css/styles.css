@@ -377,6 +377,49 @@ footer {
   font-size: 14px;
 }
 
+/* Responsividade geral */
+@media (max-width: 900px) {
+  .flex {
+      flex-direction: column !important;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+  }
+
+  header nav ul li {
+      padding: 0 20px;
+  }
+
+  .img-topo img {
+      width: 80%;
+      height: auto;
+  }
+
+  .img-port {
+      width: 90%;
+      height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .logo img {
+      height: 60px;
+  }
+
+  header.fixed-header {
+      padding: 10px 2%;
+  }
+
+  .topo-do-site .txt-topo h1 {
+      font-size: 28px;
+      line-height: 32px;
+  }
+
+  form {
+      width: 90%;
+  }
+}
 
 
 /*
