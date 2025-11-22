@@ -44,6 +44,7 @@ document.getElementById('leadForm').addEventListener('submit', async function(e)
     // Exibe retorno para o usuário
   const data = await res.json();
   document.getElementById('Confirmacao').textContent = data.mensagem;
+  
   this.reset();
 });
 
