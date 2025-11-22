@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <!-- Mantém o site responsivo em mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Meu Portfólio</title>
-    <!-- inicio google font-->
+
+    <!-- Carrega Google Fonts (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- Fim google font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-    <!-- Bootstrap icon-->
+    <!-- Ícones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Fim Bootstrap icon-->
-     
-    <link rel="stylesheet" href="public/css/styles.css">
+
+    <!-- Arquivo CSS CORRETO para Vercel (SEM "public/") -->
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
+
+    <!-- Cabeçalho fixo do site -->
     <header class="fixed-header">
-        <div class="interface ">
+        <div class="interface">
+
+            <!-- Logotipo com link para o topo -->
             <div class="logo">
                 <a href="#inicio">
-                    <img class="logoo" src="public/images/logo best.png"  alt="">
+                    <!-- Caminho corrigido para Vercel -->
+                    <img class="logoo" src="/images/logo best.png" alt="Logo do Portfólio">
                 </a>
-            </div> <!--logo-->
-            
+            </div>
+
+            <!-- Menu Desktop -->
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -33,169 +45,197 @@
                     <li><a href="#especialidade">Especialidade</a></li>
                 </ul>
             </nav>
+
+            <!-- Botão Contato do Header -->
             <div class="btn-contato">
                 <a href="#formulario">
                     <button>Contato</button>
                 </a>
-            </div> <!--Button-->
+            </div>
 
-        </div> <!-- interface-->
+        </div>
     </header>
 
     <main>
+
+        <!-- Seção principal do topo -->
         <section id="inicio" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
+
+                    <!-- Texto principal -->
                     <div class="txt-topo">
                         <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-                        <p>Como um buscador de  oportunidades, estou sempre atento a novas maneiras de fazer
-                           as coisas e estou pronto para mergulhar em projetos desafiadores e inovadores. 
-                           Estou ansioso para contribuir com minha paixão pela inovação e minha vontade de aprender.
+                        <p>
+                            Como um buscador de oportunidades, estou sempre atento a novas maneiras de inovar
+                            e mergulhar em projetos desafiadores.
                         </p>
+
+                        <!-- Botão "Entre em contato" -->
                         <div class="btn-contato">
                             <a href="#formulario">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
-                    </div> <!--txttopo-site-->
+                    </div>
+
+                    <!-- Imagem do topo (corrigida para Vercel) -->
                     <div class="img-topo">
-                        <img src="public/images/ia.webp" style="height: 250px; border-radius: 25px;" alt="">                       
-                    </div><!--img-topo-site-->
-                </div> 
+                        <img src="/images/ia.webp" style="height: 250px; border-radius: 25px;" alt="Imagem topo IA">
+                    </div>
+
+                </div>
             </div>
         </section>
 
+        <!-- Seção especialidades -->
         <section id="especialidade" class="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+
                 <div class="flex">
+
+                    <!-- Box 1 -->
                     <div class="special-box">
                         <i class="bi bi-code-square"></i>
                         <h3>WEBSITES</h3>
-                        <p>
-                            Desenvolvimento de sites responsivos e otimizados, com foco em design intuitivo e funcionalidade. Utilizo as melhores práticas de SEO para garantir visibilidade nos motores de busca, além de integrar recursos interativos que melhoram a experiência do usuário.
-                        </p>
+                        <p>Desenvolvimento de sites modernos, responsivos e funcionais.</p>
+                    </div>
 
-                    </div> <!--especialidade-box-->
-
+                    <!-- Box 2 -->
                     <div class="special-box">
                         <i class="bi bi-cart"></i>
                         <h3>LOJAS ONLINE</h3>
-                        <p>
-                            Criação de e-commerces personalizados, com foco em experiência do usuário e conversão. Trabalho com plataformas adaptáveis, integração de meios de pagamento e design intuitivo. Cada loja é pensada para destacar seus produtos e facilitar a jornada do cliente, do clique à compra.
-                        </p>
+                        <p>E-commerce completo com foco em conversão.</p>
+                    </div>
 
-                    </div> <!--especialidade-box-->
-
+                    <!-- Box 3 -->
                     <div class="special-box">
                         <i class="bi bi-code-square"></i>
-                        <h3>Blog</h3>
-                        <p>
-                            Desenvolvimento de blogs personalizados, com foco em design responsivo e otimização para SEO. Crio layouts atraentes que destacam o conteúdo, facilitando a leitura e a navegação. Integro recursos interativos para engajar os leitores e promover a interação com o conteúdo.
-                        </p>
+                        <h3>BLOG</h3>
+                        <p>Layouts rápidos, otimizados e com SEO.</p>
+                    </div>
 
-                    </div> <!--especialidade-box-->
-                </div> <!--flex-->
-            </div><!--interface-->
-        </section> <!--especialidade-->
+                </div>
+            </div>
+        </section>
 
-        <section id="sobre" class="sobre"> <!--sobre-->
+        <!-- Seção Sobre mim -->
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
+
+                    <!-- Foto sobre mim -->
                     <div class="img-sobre">
-                        <img src="public/images/perfilgood.jpg" width="200" height="280" alt="">
+                        <img src="/images/perfilgood.jpg" width="200" height="280" alt="Foto pessoal">
                     </div>
+
+                    <!-- Texto sobre mim -->
                     <div class="txt-sobre">
-                        <h2>MUITO PRAZER <SPAn>SOU WOLKENDO ARIAS.</SPAn></h2>
-                        <P> Nascido no Haiti, sou fluente em Crioulo e Francês. Minha curiosidade e interesse por idiomas me levaram a aprender Português durante minha jornada no Brasil, e possuo conhecimentos em Inglês, além de noções básicas de Coreano e Espanhol.
-                        Apaixonado por tecnologia, decidi seguir a carreira em Ciência da Computação na Universidade Cruzeiro do Sul. Durante o curso, aprofundei meus conhecimentos em diversas linguagens de programação, como Python, Java e PHP, e desenvolvi habilidades em redes de computadores, bancos de dados SQL e HTML/CSS.
-                        </P>
-                        <P>
-                           Acredito no poder da programação para criar soluções inovadoras e impactar positivamente a vida das pessoas. Me dedico a aprender continuamente e buscar novos desafios, sempre com o objetivo de me tornar um profissional completo e atuante na área.
+                        <h2>MUITO PRAZER <span>SOU WOLKENDO ARIAS.</span></h2>
 
-                        </P>
+                        <p>Nascido no Haiti, fluente em Crioulo e Francês. Desenvolvi o Português durante minha jornada no Brasil.</p>
+                        <p>Acredito no poder da tecnologia e estudo Ciência da Computação para me tornar um profissional completo.</p>
+
+                        <!-- Botões redes sociais -->
                         <div class="btn_redes">
-                            <a href="https://www.instagram.com/maestro_woldo/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://github.com/maestrowoldo"  target="_blank"><button><i class="bi bi-github"></i></button></i></a>
-                            <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/"  target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.instagram.com/maestro_woldo/" target="_blank">
+                                <button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/maestrowoldo" target="_blank">
+                                <button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/" target="_blank">
+                                <button><i class="bi bi-linkedin"></i></button></a>
                         </div>
-                    </div><!--txt-sobre-->
-                </div> <!--flex-->
-            </div><!--interface-->
-        </section><!--Fim sobre-->
+                    </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
         <section id="projeto" class="portfolio">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+
                 <div class="flex">
+
+                    <!-- Projeto Web -->
                     <a href="https://mega.nz/folder/Z0l0zb4b#JDeiUNLdtkLYO2eiPpwcCw" target="_blank">
-                        <div class="img-port" style="background-image: url('public/images/web_pro.jpg');">
+                        <div class="img-port" style="background-image: url('/images/web_pro.jpg');">
                             <div class="overlay">Programação Web</div>
                         </div>
                     </a>
+
+                    <!-- Projeto Adobe -->
                     <a href="https://www.behance.net/gallery/227603853/Woldo-Visuals" target="_blank">
-                        <div class="img-port" style="background-image: url('public/images/designer.avif');">
+                        <div class="img-port" style="background-image: url('/images/designer.avif');">
                             <div class="overlay">Projeto Adobe</div>
                         </div>
                     </a>
+
+                    <!-- Projeto Power BI -->
                     <a href="painelBi.html" target="_blank">
-                        <div class="img-port" style="background-image: url('public/images/BI.jpg');">
-                            <div class="overlay">Power BI </div>
+                        <div class="img-port" style="background-image: url('/images/BI.jpg');">
+                            <div class="overlay">Power BI</div>
                         </div>
                     </a>
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- Fim portfólio -->
-        
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formulário -->
         <section id="formulario" class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO</span></h2>
-          
-            <form id="leadForm">
-                <input type="text" id="nome"  placeholder="Seu nome completo" required>
-                <input type="text" id="email"  placeholder="Seu e-mail " required>
-                <input type="text" id="celular"  placeholder="Seu celular" >
-                <textarea name="" id="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button class="btn-enviar" type="submit"> Enviar</button>
-            </form>
-			<p class="Confirmacao" id="Confirmacao"></p>
+
+                <!-- Formulário com integração via /api/lead -->
+                <form id="leadForm">
+                    <input type="text" id="nome" placeholder="Seu nome completo" required>
+                    <input type="text" id="email" placeholder="Seu e-mail" required>
+                    <input type="text" id="celular" placeholder="Seu celular opcional">
+                    <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <button class="btn-enviar" type="submit">Enviar</button>
+                </form>
+
+                <!-- Texto que aparece após enviar -->
+                <p class="Confirmacao" id="Confirmacao"></p>
             </div>
-            
-        </section><!--Fim formulario-->
-        
-        
-        <script src="public/js/Script.js" defer></script>
-          
-        
-        <!-- Passo 1: Crie um elemento div com o ID "google_translate_element" -->
-   
+        </section>
+
+        <!-- Script do formulário (caminho corrigido para Vercel) -->
+        <script src="/js/Script.js" defer></script>
+
     </main>
 
     <footer>
         <div class="interface">
             <div class="line-footer">
+
+                <!-- Logo no footer -->
                 <div class="logo-footer">
-                    <img src="public/images/logo best.png" alt="Logotipo Woldo Design +">
+                    <img src="/images/logo best.png" alt="Logotipo Woldo Design +">
                 </div>
 
-                <p class="copyright">&copy; 2024 Woldo Pro. All rights reserved.</p>
+                <!-- Texto de direitos autorais -->
+                <p class="copyright">
+                    &copy; 2024 Woldo Pro. All rights reserved.
+                </p>
 
+                <!-- Redes sociais no footer -->
                 <div class="btn_redes">
-                    <a href="https://www.instagram.com/maestro_woldo/" target="_blank">
-                    <button><i class="bi bi-instagram"></i></button>
-                    </a>
-                    <a href="https://github.com/maestrowoldo" target="_blank">
-                    <button><i class="bi bi-github"></i></button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/" target="_blank">
-                    <button><i class="bi bi-linkedin"></i></button>
-                    </a>
+                    <a href="https://www.instagram.com/maestro_woldo/" target="_blank"><button><i
+                                class="bi bi-instagram"></i></button></a>
+                    <a href="https://github.com/maestrowoldo" target="_blank"><button><i
+                                class="bi bi-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/wolkendo-arias-0643b918a/" target="_blank"><button><i
+                                class="bi bi-linkedin"></i></button></a>
                 </div>
+
             </div>
         </div>
     </footer>
 
-    
 </body>
+
 </html>
